@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testando Imagens!</title>
+        <link rel="shortcut icon" href="chrome.ico" type="image/x-icon">
+        link
+        <style>
+            div#titulo {
+                font: normal 20pt 'Arial';
+                font-weight: bold;
+            }
+            div#texto {
+                font: normal 12pt 'Arial';
+                margin-top: 15px;
+            }
+            div#imagem {
+                width: 200px;
+                margin-top: 20px;
+            }
+            div#koda {
+                font: normal 12pt 'Arial';
+                font-weight: bold;
+                margin-top: 20px;
+                margin-left: 125px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="titulo">Testando Imagens!</div>
+        <div id="texto">Abaixo está uma imagem...</div>
+        <div id="imagem" onmouseenter="emCima()" onmouseout="fora()">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/55/Come_with_me_%28Kumi_Koda_single%29.jpg" alt="Koda Kumi Baixou o Nível">
+        </div>
+        <div id="koda">Oi</div>
+    </body>
+
+    <script>
+        var imagem = document.getElementById('imagem')
+        var ativo = document.getElementById('koda')
+
+        function emCima() {
+            ativo.innerText = "Sai da Koda!"
+        }
+
+        function fora() {
+            ativo.innerText = "Isso mesmo!"
+        }
+
+    </script>
+
+</html>
